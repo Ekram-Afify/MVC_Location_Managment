@@ -1,0 +1,30 @@
+﻿@model LocationManagement.ViewModels.CountryCreateViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="panel-body">
+    @using (Ajax.BeginForm("Edit", "Country", new AjaxOptions { }, new { @class = "form-horizontal", onsubmit = "return SubmitEditForm(this)" }))
+    {
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.HiddenFor(model => model.ID)
+        <div class="form-group">
+            @Html.LabelFor(model => model.CountryName, "Country Name", new { @class = "control-label col-lg-2" })
+
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.CountryName, new { @class = "form-control col-lg-2" })
+                @Html.ValidationMessageFor(model => model.CountryName)
+
+            </div>
+        </div>
+
+
+        <div class="text-right">
+            <button type="submit" class="btn btn-primary">Save<i class="icon-arrow-right14 position-right"></i></button>
+        </div>
+
+    }
+
+</div>

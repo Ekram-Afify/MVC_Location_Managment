@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationManagement.Web", "LocationManagement.Web\LocationManagement.Web.csproj", "{082F0639-4B05-4092-B63C-134E71935F3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationManagement.Data", "LocationManagement.Data\LocationManagement.Data.csproj", "{62E939BE-3191-447E-81D5-89B43C12939B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationManagement.Models", "LocationManagement.Models\LocationManagement.Models.csproj", "{0BC13C86-D01C-4434-8EC5-A3FD50226028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationManagement.ViewModels", "LocationManagement.ViewModels\LocationManagement.ViewModels.csproj", "{BA6AD070-AA71-4856-B6E1-54207333767E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationManagement.Services", "LocationManagement.Services\LocationManagement.Services.csproj", "{954FB239-006C-4D6E-95E3-D2E30B110C2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationManagement.Repositories", "LocationManagement.Repositories\LocationManagement.Repositories.csproj", "{FBB2F224-837E-497A-96BC-EB5C94653E2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{082F0639-4B05-4092-B63C-134E71935F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082F0639-4B05-4092-B63C-134E71935F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082F0639-4B05-4092-B63C-134E71935F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082F0639-4B05-4092-B63C-134E71935F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E939BE-3191-447E-81D5-89B43C12939B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E939BE-3191-447E-81D5-89B43C12939B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E939BE-3191-447E-81D5-89B43C12939B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E939BE-3191-447E-81D5-89B43C12939B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC13C86-D01C-4434-8EC5-A3FD50226028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC13C86-D01C-4434-8EC5-A3FD50226028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC13C86-D01C-4434-8EC5-A3FD50226028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC13C86-D01C-4434-8EC5-A3FD50226028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6AD070-AA71-4856-B6E1-54207333767E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6AD070-AA71-4856-B6E1-54207333767E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6AD070-AA71-4856-B6E1-54207333767E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6AD070-AA71-4856-B6E1-54207333767E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954FB239-006C-4D6E-95E3-D2E30B110C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954FB239-006C-4D6E-95E3-D2E30B110C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954FB239-006C-4D6E-95E3-D2E30B110C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954FB239-006C-4D6E-95E3-D2E30B110C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB2F224-837E-497A-96BC-EB5C94653E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB2F224-837E-497A-96BC-EB5C94653E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB2F224-837E-497A-96BC-EB5C94653E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB2F224-837E-497A-96BC-EB5C94653E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7501D1D-68A1-4329-A111-C71B0790CC90}
+	EndGlobalSection
+EndGlobal

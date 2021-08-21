@@ -1,0 +1,45 @@
+﻿
+@media (min-width: 1000px) {
+
+    .table-container {
+        min-height: 45rem;
+        max-height: 45rem;
+    }
+
+    .sidebar-category {
+        min-height: 54rem;
+        max-height: 54rem;
+        overflow-y:scroll !important;
+    }
+
+    .category-content {
+        max-height: 85rem !important;
+        overflow: hidden;
+    }
+}
+
+.field-validation-error{
+    color:red !important;
+}
+
+
+#project-details-img {
+    width: 26em;
+    height: 30rem
+}
+
+#project-details-description {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    white-space:pre-line;
+
+}
+
+#Upload-img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.country-form-group, .city-form-group {
+    padding-bottom: 0rem !important;
+}

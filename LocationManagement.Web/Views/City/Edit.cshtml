@@ -1,0 +1,37 @@
+﻿@model LocationManagement.ViewModels.CityCreateViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="panel-body">
+    @using (Ajax.BeginForm("Edit", "City", new AjaxOptions { }, new { @class = "form-horizontal", onsubmit = "return SubmitEditForm(this)" }))
+    {
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.HiddenFor(model => model.ID)
+        <div class="form-group">
+            <div class="form-group">
+                @Html.LabelFor(model => model.CountryId, "Country", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.DropDownList("CountryID", new SelectList(ViewBag.Countries, "Value", "Text", Model.CountryId), htmlAttributes: new { @class = "form-control" })
+
+                    @Html.ValidationMessageFor(model => model.CountryId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            @Html.LabelFor(model => model.CityName, "City Name", new { @class = "control-label col-lg-2" })
+
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.CityName, new { @class = "form-control col-lg-2" })
+                @Html.ValidationMessageFor(model => model.CityName)
+
+            </div>
+        </div>
+
+        <div class="text-right">
+            <button type="submit" class="btn btn-primary">Save<i class="icon-arrow-right14 position-right"></i></button>
+        </div>
+
+    }
+
+</div>

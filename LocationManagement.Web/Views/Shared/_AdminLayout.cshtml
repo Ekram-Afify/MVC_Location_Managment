@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <link rel="icon" href="~/Content/Images/logo-for-IWB.png">
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/Content/Admin/AdminExternalStyles/icons/icomoon/styles.css" rel="stylesheet" />
+    <link href="~/Content/Admin/AdminExternalStyles/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Admin/AdminExternalStyles/core.css" rel="stylesheet" />
+    <link href="~/Content/Admin/AdminExternalStyles/components.css" rel="stylesheet" />
+    <link href="~/Content/Admin/AdminExternalStyles/colors.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+   
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @*<script src="~/Scripts/AdminExternalScripts/plugins/ui/nicescroll.min.js"></script>*@
+    <script src="~/Scripts/AdminExternalScripts/plugins/ui/drilldown.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/plugins/loaders/pace.min.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/plugins/loaders/blockui.min.js"></script>
+
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="~/Scripts/AdminExternalScripts/core/app.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/pages/layout_sidebar_sticky_custom.js"></script>
+
+    <!-- /theme JS files -->
+    <!-- Theme JS files -->
+    <script src="~/Scripts/AdminExternalScripts/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/plugins/tables/datatables/extensions/autofill.min.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/plugins/tables/datatables/extensions/select.min.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/plugins/forms/selects/select2.min.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/pages/datatables_extension_autofill.js"></script>
+    <script src="~/Scripts/AdminExternalScripts/plugins/ui/ripple.min.js"></script>
+    <link href="~/Content/Admin/AdminStyles.css" rel="stylesheet" />
+    <script src="~/Scripts/AdminExternalScripts/pages/datatables_extension_select.js"></script>
+    <style>
+        #NotificationsContent {
+            max-height: 300px;
+            overflow-y: scroll;
+        }
+
+        ul.nav li.dropdown:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        .loadmoreShow {
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse bg-indigo">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="~/Content/Images/logo-for-IWB.png" alt=""></a>
+
+            <ul class="nav navbar-nav pull-right visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="sidebar-control sidebar-main-toggle hidden-xs">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <li>
+                    <a href="#">
+                        @*<i class="icon-cog3"></i>*@
+                        <span class="visible-xs-inline-block position-right">Icon link</span>
+                    </a>
+                </li>
+               
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="assets/images/image.png" alt="">
+                        <span>Ekram Afify</span>
+                        
+                    </a>
+                   
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+
+
+
+
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main sidebar -->
+
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-fixed">
+                    <div class="sidebar-content">
+
+                        <!-- Main navigation -->
+                        <div class="sidebar-category sidebar-category-visible">
+                        
+
+                            <div class="category-content no-padding">
+                                <ul class="navigation navigation-main navigation-accordion">
+
+
+                                    <li><a href="@Url.Action("Index", "Country")"><i class="icon-home4"></i> <span>  Country Management</span></a></li>
+                                    <li><a href="@Url.Action("Index", "City")"><i class="icon-home4"></i> <span>  City Management</span></a></li>
+                                  
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- /main navigation -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                @RenderBody()
+            </div>
+
+        </div>
+    </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.min.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+   
+   
+    <script src="~/Scripts/notify.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
